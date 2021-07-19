@@ -5,9 +5,10 @@ const loadPlaces = function (coords) {
     const PLACES = [
         {
             name: "Your place name",
+            url: './Tree (1).png',
             location: {
-                lat: -33.979361, // add here latitude if using static data
-                lng: 151.054684, // add here longitude if using static data
+                lat: -33.979392, // add here latitude if using static data
+                lng: 151.054466, // add here longitude if using static data
             }
         },
     ];
@@ -18,6 +19,7 @@ const loadPlaces = function (coords) {
 
     return Promise.resolve(PLACES);
 };
+
 
 // getting places from REST APIs
 function loadPlaceFromAPIs(position) {

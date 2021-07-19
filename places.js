@@ -1,13 +1,13 @@
 const loadPlaces = function (coords) {
     // COMMENT FOLLOWING LINE IF YOU WANT TO USE STATIC DATA AND ADD COORDINATES IN THE FOLLOWING 'PLACES' ARRAY
-    const method = 'api';
+    //const method = 'api';
 
     const PLACES = [
         {
             name: "Your place name",
             location: {
-                lat: 0, // add here latitude if using static data
-                lng: 0, // add here longitude if using static data
+                lat: -33.979361, // add here latitude if using static data
+                lng: 151.054684, // add here longitude if using static data
             }
         },
     ];
@@ -83,8 +83,8 @@ window.onload = () => {
         (err) => console.error('Error in retrieving position', err),
         {
             enableHighAccuracy: true,
-            maximumAge: 0,
-            timeout: 27000,
+            maximumAge: 100,
+            timeout: 2700,
         }
     );
 };
